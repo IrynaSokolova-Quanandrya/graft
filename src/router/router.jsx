@@ -23,6 +23,6 @@ export const routing = createBrowserRouter([
     ],
   },
   {
-    basename: '/Сraft'
+    basename: '/graft'
   }
 ]);
