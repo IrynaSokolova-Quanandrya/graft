@@ -1,6 +1,6 @@
 import { GlobalStyle } from "./GlobalStyle";
 import { routing } from "./router/router";
-import { RouterProvider } from "react-router-dom";
+import { BrowserRouter, RouterProvider } from "react-router-dom";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
 import { TouchBackend } from "react-dnd-touch-backend";
@@ -18,7 +18,8 @@ const getBackend = () =>{
 export const App = () => {
   return <>
   <DndProvider backend={getBackend()} options={{ enableMouseEvents: true }}>
-  <RouterProvider router={routing} />
+      <RouterProvider router={routing} />
+      <BrowserRouter basename="/graft/"/>
   </DndProvider>
   <GlobalStyle/>
   </>
