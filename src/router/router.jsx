@@ -8,7 +8,7 @@ export const routing = createBrowserRouter([
   {
     path: "/Craft",
     element: <Layout />,
-    errorElement: <h1>error</h1>
+    errorElement: <h1>error</h1>,
     children: [
       { index: true,
         element: <HomePage/>,
